@@ -56,12 +56,28 @@ export default function Jogos() {
 
     if (usuario && !usuario.email) {
         return (
-            <main className="p-4 sm:p-8">
-                <h1 className="text-3xl font-bold mb-4">Jogos da Copa</h1>
-                <p>Você precisa entrar para fazer seus palpites.</p>
-                <a href="/api/auth/signin" className="text-green-700 font-semibold">
-                    Entrar com Google
-                </a>
+            <main className="min-h-[calc(100vh-80px)] flex items-center justify-center p-4">
+                <div className="max-w-md w-full rounded-3xl bg-white p-8 text-center shadow-lg border border-gray-200">
+                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-3xl">
+                        ⚽
+                    </div>
+
+                    <h1 className="text-3xl font-bold text-gray-900">
+                        Bolão da Copa
+                    </h1>
+
+                    <p className="mt-3 text-gray-600">
+                        Entre com sua conta Google para fazer seus palpites e acompanhar o ranking.
+                    </p>
+
+                    <a
+                        href="/api/auth/signin"
+                        className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-green-800 px-5 py-3 font-semibold text-white shadow hover:bg-green-900"
+                    >
+                        Entrar com Google
+                    </a>
+
+                </div>
             </main>
         );
     }

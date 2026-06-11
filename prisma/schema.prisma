@@ -1,0 +1,85 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  bets          Bet[]
+  accounts      Account[]
+  sessions      Session[]
+  createdAt     DateTime  @default(now())
+}
+
+model Match {
+  id            Int      @id @default(autoincrement())
+  codigo        String   @unique
+  grupo         String
+  fase          String   @default("Fase de grupos")
+  mandante      String
+  visitante     String
+  dataHora      DateTime
+  estadio       String?
+  cidade        String?
+  golsMandante  Int?
+  golsVisitante Int?
+  bets          Bet[]
+  createdAt     DateTime @default(now())
+}
+model Bet {
+  id            Int      @id @default(autoincrement())
+  userId        String
+  matchId       Int
+  golsMandante  Int
+  golsVisitante Int
+  pontos        Int      @default(0)
+  createdAt     DateTime @default(now())
+
+  user  User  @relation(fields: [userId], references: [id])
+  match Match @relation(fields: [matchId], references: [id])
+
+  @@unique([userId, matchId])
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}

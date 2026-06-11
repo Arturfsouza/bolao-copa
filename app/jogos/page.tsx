@@ -32,6 +32,9 @@ export default function Jogos() {
             const resposta = await fetch("/api/matches");
             const dados = await resposta.json();
             setMatches(dados);
+            const respostaPalpites = await fetch("/api/meus-palpites");
+            const dadosPalpites = await respostaPalpites.json();
+            setPalpites(dadosPalpites);
         }
 
         carregarDados();
@@ -104,6 +107,8 @@ export default function Jogos() {
                                         visitante={jogo.visitante}
                                         data={data}
                                         horario={horario}
+                                        golsMandanteInicial={palpites[jogo.id]?.golsMandante ?? ""}
+                                        golsVisitanteInicial={palpites[jogo.id]?.golsVisitante ?? ""}
                                         onPalpiteChange={atualizarPalpite}
                                     />
                                 );

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getFlagUrl } from "@/lib/flags";
 
 type MatchCardProps = {
@@ -9,6 +9,8 @@ type MatchCardProps = {
     visitante: string;
     data: string;
     horario: string;
+    golsMandanteInicial: string;
+    golsVisitanteInicial: string;
     onPalpiteChange: (
         jogoId: number,
         golsMandante: string,
@@ -22,10 +24,16 @@ export function MatchCard({
     visitante,
     data,
     horario,
+    golsMandanteInicial,
+    golsVisitanteInicial,
     onPalpiteChange,
 }: MatchCardProps) {
-    const [golsMandante, setGolsMandante] = useState("");
-    const [golsVisitante, setGolsVisitante] = useState("");
+    const [golsMandante, setGolsMandante] = useState(golsMandanteInicial);
+    const [golsVisitante, setGolsVisitante] = useState(golsVisitanteInicial);
+    useEffect(() => {
+        setGolsMandante(golsMandanteInicial);
+        setGolsVisitante(golsVisitanteInicial);
+    }, [golsMandanteInicial, golsVisitanteInicial]);
 
     const mandanteFlag = getFlagUrl(mandante);
     const visitanteFlag = getFlagUrl(visitante);

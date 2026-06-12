@@ -18,7 +18,11 @@ export default function Ranking() {
             const resposta = await fetch("/api/ranking");
             const dados = await resposta.json();
 
-            setUsuarios(dados);
+            if (Array.isArray(dados)) {
+                setUsuarios(dados);
+            } else {
+                setUsuarios([]);
+            }
         }
 
         carregarRanking();

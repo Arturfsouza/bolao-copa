@@ -11,6 +11,7 @@ type MatchCardProps = {
     horario: string;
     golsMandanteInicial: string;
     golsVisitanteInicial: string;
+    bloqueado: boolean;
     onPalpiteChange: (
         jogoId: number,
         golsMandante: string,
@@ -26,6 +27,7 @@ export function MatchCard({
     horario,
     golsMandanteInicial,
     golsVisitanteInicial,
+    bloqueado,
     onPalpiteChange,
 }: MatchCardProps) {
     const [golsMandante, setGolsMandante] = useState(golsMandanteInicial);
@@ -67,7 +69,9 @@ export function MatchCard({
                             setGolsMandante(e.target.value);
                             onPalpiteChange(id, e.target.value, golsVisitante);
                         }}
-                        className="w-16 border rounded-lg p-2 text-center text-lg font-bold"
+                        disabled={bloqueado}
+                        className={`w-16 border rounded-lg p-2 text-center text-lg font-bold ${bloqueado ? "bg-gray-100 text-gray-400 cursor-not-allowed" : ""
+                            }`}
                     />
                 </div>
 
@@ -93,7 +97,9 @@ export function MatchCard({
                             setGolsVisitante(e.target.value);
                             onPalpiteChange(id, golsMandante, e.target.value);
                         }}
-                        className="w-16 border rounded-lg p-2 text-center text-lg font-bold"
+                        disabled={bloqueado}
+                        className={`w-16 border rounded-lg p-2 text-center text-lg font-bold ${bloqueado ? "bg-gray-100 text-gray-400 cursor-not-allowed" : ""
+                            }`}
                     />
                 </div>
             </div>

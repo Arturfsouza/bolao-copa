@@ -1,10 +1,4 @@
 export const worldCup2026Matches = [
-  { codigo: "WC2026-001", grupo: "A", mandante: "Mexico", visitante: "South Africa", dataHora: new Date("2026-06-11T16:00:00-03:00"), estadio: "Mexico City Stadium", cidade: "Mexico City" },
-  { codigo: "WC2026-002", grupo: "A", mandante: "South Korea", visitante: "Czech Republic", dataHora: new Date("2026-06-12T00:00:00-03:00"), estadio: "Estadio Guadalajara", cidade: "Guadalajara" },
-
-  { codigo: "WC2026-003", grupo: "B", mandante: "Canada", visitante: "Bosnia and Herzegovina", dataHora: new Date("2026-06-12T16:00:00-03:00"), estadio: "Toronto Stadium", cidade: "Toronto" },
-  { codigo: "WC2026-004", grupo: "D", mandante: "USA", visitante: "Paraguay", dataHora: new Date("2026-06-12T22:00:00-03:00"), estadio: "Los Angeles Stadium", cidade: "Los Angeles" },
-  { codigo: "WC2026-005", grupo: "B", mandante: "Qatar", visitante: "Switzerland", dataHora: new Date("2026-06-13T16:00:00-03:00"), estadio: "San Francisco Bay Area Stadium", cidade: "San Francisco Bay Area" },
   { codigo: "WC2026-006", grupo: "C", mandante: "Brazil", visitante: "Morocco", dataHora: new Date("2026-06-13T19:00:00-03:00"), estadio: "New York New Jersey Stadium", cidade: "New York/NJ" },
   { codigo: "WC2026-007", grupo: "C", mandante: "Haiti", visitante: "Scotland", dataHora: new Date("2026-06-13T22:00:00-03:00"), estadio: "Boston Stadium", cidade: "Boston" },
   { codigo: "WC2026-008", grupo: "D", mandante: "Australia", visitante: "Türkiye", dataHora: new Date("2026-06-14T01:00:00-03:00"), estadio: "BC Place Vancouver", cidade: "Vancouver" },

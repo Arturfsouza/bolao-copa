@@ -97,7 +97,7 @@ export default function Jogos() {
     }, {});
 
     return (
-        <main className="p-4 sm:p-8">
+        <main className="p-4 pb-24 sm:p-8 sm:pb-28">
             <h1 className="text-3xl font-bold mb-6">Jogos da Copa</h1>
 
             <div className="flex flex-col gap-4">
@@ -125,6 +125,7 @@ export default function Jogos() {
                                         horario={horario}
                                         golsMandanteInicial={palpites[jogo.id]?.golsMandante ?? ""}
                                         golsVisitanteInicial={palpites[jogo.id]?.golsVisitante ?? ""}
+                                        bloqueado={new Date(jogo.dataHora) <= new Date()}
                                         onPalpiteChange={atualizarPalpite}
                                     />
                                 );
@@ -152,9 +153,31 @@ export default function Jogos() {
                     const dados = await resposta.json();
 
                     alert(dados.mensagem);
-                    console.log(dados);
                 }}
-                className="mt-6 bg-green-800 hover:bg-green-900 text-white font-semibold px-6 py-3 rounded-xl shadow"
+                className="
+                    fixed
+                    bottom-4
+                    left-4
+                    right-4
+                    z-50
+                    rounded-2xl
+                    bg-green-700
+                    px-5
+                    py-3
+                    text-base
+                    font-bold
+                    text-white
+                    shadow-lg
+                    shadow-green-900/30
+                    transition
+                    active:scale-[0.98]
+                    hover:bg-green-800
+                    sm:left-auto
+                    sm:right-8
+                    sm:bottom-8
+                    sm:w-auto
+                    sm:px-6
+                "
             >
                 Salvar palpites
             </button>

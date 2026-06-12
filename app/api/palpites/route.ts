@@ -29,7 +29,21 @@ export async function POST(request: Request) {
   const palpites = await request.json();
 
   const palpitesSalvos = await Promise.all(
-    Object.entries(palpites).map(([matchId, palpite]) => {
+    Object.entries(palpites).map(async ([matchId, palpite]) => {
+      const jogo = await prisma.match.findUnique({
+        where: {
+          id: Number(matchId),
+        },
+      });
+
+      if (!jogo) {
+        return null;
+      }
+
+      if (jogo.dataHora <= new Date()) {
+        return null;
+      }
+
       const dados = palpite as {
         golsMandante: string;
         golsVisitante: string;
@@ -56,8 +70,10 @@ export async function POST(request: Request) {
     })
   );
 
+  const palpitesValidos = palpitesSalvos.filter(Boolean);
+
   return Response.json({
     mensagem: "Palpites salvos com sucesso",
-    palpites: palpitesSalvos,
+    palpites: palpitesValidos,
   });
 }

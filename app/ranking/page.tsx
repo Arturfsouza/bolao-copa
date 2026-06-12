@@ -43,8 +43,6 @@ export default function Ranking() {
                                 {medalha} {usuario.name}
                             </h2>
 
-                            <p className="text-gray-600">{usuario.email}</p>
-
                             <p className="mt-2 font-bold">
                                 {usuario.pontos} pontos
                             </p>

@@ -29,7 +29,7 @@ export default function Admin() {
 
             setAdmin(true);
 
-            const respostaJogos = await fetch("/api/matches");
+            const respostaJogos = await fetch("/api/matches?fase=Mata-mata");
             const dadosJogos = await respostaJogos.json();
 
             setMatches(dadosJogos);

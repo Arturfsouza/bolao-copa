@@ -29,7 +29,7 @@ export default function Jogos() {
                 return;
             }
 
-            const resposta = await fetch("/api/matches");
+            const resposta = await fetch("/api/matches?fase=Mata-mata");
             const dados = await resposta.json();
             setMatches(dados);
             const respostaPalpites = await fetch("/api/meus-palpites");

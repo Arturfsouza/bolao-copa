@@ -81,85 +81,14 @@ export const worldCup2026Matches = [
   { codigo: "WC2026-071", grupo: "J", mandante: "Algeria", visitante: "Austria", dataHora: new Date("2026-06-27T23:00:00-03:00"), estadio: "Kansas City Stadium", cidade: "Kansas City" },
   { codigo: "WC2026-072", grupo: "J", mandante: "Jordan", visitante: "Argentina", dataHora: new Date("2026-06-27T23:00:00-03:00"), estadio: "Dallas Stadium", cidade: "Dallas" },
   
-  {
-    "codigo": "WC2026-R16-01",
-    "grupo": "Mata-mata",
-    "fase": "Mata-mata",
-    "mandante": "Canada",
-    "visitante": "Morocco",
-    "dataHora": "2026-07-04T14:00:00-03:00",
-    "estadio": "Houston Stadium",
-    "cidade": "Houston"
-  },
-  {
-    "codigo": "WC2026-R16-02",
-    "grupo": "Mata-mata",
-    "fase": "Mata-mata",
-    "mandante": "Paraguay",
-    "visitante": "France",
-    "dataHora": "2026-07-04T18:00:00-03:00",
-    "estadio": "Philadelphia Stadium",
-    "cidade": "Philadelphia"
-  },
-  {
-    "codigo": "WC2026-R16-03",
-    "grupo": "Mata-mata",
-    "fase": "Mata-mata",
-    "mandante": "Brazil",
-    "visitante": "Norway",
-    "dataHora": "2026-07-05T17:00:00-03:00",
-    "estadio": "New York New Jersey Stadium",
-    "cidade": "East Rutherford"
-  },
-  {
-    "codigo": "WC2026-R16-04",
-    "grupo": "Mata-mata",
-    "fase": "Mata-mata",
-    "mandante": "Mexico",
-    "visitante": "England",
-    "dataHora": "2026-07-05T21:00:00-03:00",
-    "estadio": "Mexico City Stadium",
-    "cidade": "Mexico City"
-  },
-  {
-    "codigo": "WC2026-R16-05",
-    "grupo": "Mata-mata",
-    "fase": "Mata-mata",
-    "mandante": "Portugal",
-    "visitante": "Spain",
-    "dataHora": "2026-07-06T16:00:00-03:00",
-    "estadio": "Dallas Stadium",
-    "cidade": "Dallas"
-  },
-  {
-    "codigo": "WC2026-R16-06",
-    "grupo": "Mata-mata",
-    "fase": "Mata-mata",
-    "mandante": "USA",
-    "visitante": "Belgium",
-    "dataHora": "2026-07-06T21:00:00-03:00",
-    "estadio": "Seattle Stadium",
-    "cidade": "Seattle"
-  },
-  {
-    "codigo": "WC2026-R16-07",
-    "grupo": "Mata-mata",
-    "fase": "Mata-mata",
-    "mandante": "Argentina",
-    "visitante": "Egypt",
-    "dataHora": "2026-07-07T13:00:00-03:00",
-    "estadio": "Atlanta Stadium",
-    "cidade": "Atlanta"
-  },
-  {
-    "codigo": "WC2026-R16-08",
-    "grupo": "Mata-mata",
-    "fase": "Mata-mata",
-    "mandante": "Colombia",
-    "visitante": "Switzerland",
-    "dataHora": "2026-07-07T17:00:00-03:00",
-    "estadio": "BC Place",
-    "cidade": "Vancouver"
-  }
+{ codigo: "WC2026-R16-01", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Canada", visitante: "Morocco", dataHora: new Date("2026-07-04T14:00:00-03:00"), estadio: "Houston Stadium", cidade: "Houston" },
+{ codigo: "WC2026-R16-02", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Paraguay", visitante: "France", dataHora: new Date("2026-07-04T18:00:00-03:00"), estadio: "Philadelphia Stadium", cidade: "Philadelphia" },
+{ codigo: "WC2026-R16-03", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Brazil", visitante: "Norway", dataHora: new Date("2026-07-05T17:00:00-03:00"), estadio: "New York New Jersey Stadium", cidade: "East Rutherford" },
+{ codigo: "WC2026-R16-04", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Mexico", visitante: "England", dataHora: new Date("2026-07-05T21:00:00-03:00"), estadio: "Mexico City Stadium", cidade: "Mexico City" },
+
+{ codigo: "WC2026-R16-05", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Portugal", visitante: "Spain", dataHora: new Date("2026-07-06T16:00:00-03:00"), estadio: "Dallas Stadium", cidade: "Dallas" },
+{ codigo: "WC2026-R16-06", grupo: "Mata-mata", fase: "Mata-mata", mandante: "USA", visitante: "Belgium", dataHora: new Date("2026-07-06T21:00:00-03:00"), estadio: "Seattle Stadium", cidade: "Seattle" },
+{ codigo: "WC2026-R16-07", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Argentina", visitante: "Egypt", dataHora: new Date("2026-07-07T13:00:00-03:00"), estadio: "Atlanta Stadium", cidade: "Atlanta" },
+{ codigo: "WC2026-R16-08", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Colombia", visitante: "Switzerland", dataHora: new Date("2026-07-07T17:00:00-03:00"), estadio: "BC Place", cidade: "Vancouver" }
 
 ];

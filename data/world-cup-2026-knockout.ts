@@ -20,4 +20,14 @@ export const worldCup2026KnockoutMatches = [
   { codigo: "WC2026-R32-14", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Australia", visitante: "Egypt", dataHora: new Date("2026-07-03T15:00:00-03:00"), estadio: "Dallas Stadium", cidade: "Arlington" },
   { codigo: "WC2026-R32-15", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Argentina", visitante: "Cape Verde", dataHora: new Date("2026-07-03T19:00:00-03:00"), estadio: "Miami Stadium", cidade: "Miami Gardens" },
   { codigo: "WC2026-R32-16", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Colombia", visitante: "Ghana", dataHora: new Date("2026-07-03T22:30:00-03:00"), estadio: "Kansas City Stadium", cidade: "Kansas City" },
+  { codigo: "WC2026-R16-01", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Canada", visitante: "Morocco", dataHora: new Date("2026-07-04T14:00:00-03:00"), estadio: "Houston Stadium", cidade: "Houston" },
+{ codigo: "WC2026-R16-02", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Paraguay", visitante: "France", dataHora: new Date("2026-07-04T18:00:00-03:00"), estadio: "Philadelphia Stadium", cidade: "Philadelphia" },
+{ codigo: "WC2026-R16-03", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Brazil", visitante: "Norway", dataHora: new Date("2026-07-05T17:00:00-03:00"), estadio: "New York New Jersey Stadium", cidade: "East Rutherford" },
+{ codigo: "WC2026-R16-04", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Mexico", visitante: "England", dataHora: new Date("2026-07-05T21:00:00-03:00"), estadio: "Mexico City Stadium", cidade: "Mexico City" },
+
+{ codigo: "WC2026-R16-05", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Portugal", visitante: "Spain", dataHora: new Date("2026-07-06T16:00:00-03:00"), estadio: "Dallas Stadium", cidade: "Dallas" },
+{ codigo: "WC2026-R16-06", grupo: "Mata-mata", fase: "Mata-mata", mandante: "USA", visitante: "Belgium", dataHora: new Date("2026-07-06T21:00:00-03:00"), estadio: "Seattle Stadium", cidade: "Seattle" },
+{ codigo: "WC2026-R16-07", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Argentina", visitante: "Egypt", dataHora: new Date("2026-07-07T13:00:00-03:00"), estadio: "Atlanta Stadium", cidade: "Atlanta" },
+{ codigo: "WC2026-R16-08", grupo: "Mata-mata", fase: "Mata-mata", mandante: "Colombia", visitante: "Switzerland", dataHora: new Date("2026-07-07T17:00:00-03:00"), estadio: "BC Place", cidade: "Vancouver" }
+
 ];

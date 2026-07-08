@@ -32,5 +32,5 @@ export const worldCup2026KnockoutMatches = [
 { codigo: "WC2026-QF-01", grupo: "Mata-mata", fase: "Quartas de final", mandante: "France", visitante: "Morocco", dataHora: new Date("2026-07-09T17:00:00-03:00"), estadio: "Boston Stadium", cidade: "Boston" },
 { codigo: "WC2026-QF-02", grupo: "Mata-mata", fase: "Quartas de final", mandante: "Spain", visitante: "Belgium", dataHora: new Date("2026-07-10T16:00:00-03:00"), estadio: "Los Angeles Stadium", cidade: "Los Angeles" },
 { codigo: "WC2026-QF-03", grupo: "Mata-mata", fase: "Quartas de final", mandante: "Norway", visitante: "England", dataHora: new Date("2026-07-11T18:00:00-03:00"), estadio: "Miami Stadium", cidade: "Miami" },
-{ codigo: "WC2026-QF-04", grupo: "Mata-mata", fase: "Quartas de final", mandante: "Argentina", visitante: "Switzerland", dataHora: new Date("2026-07-11T22:00:00-03:00"), estadio: "Kansas City Stadium", cidade: "Kansas City" },
+{ codigo: "WC2026-QF-04", grupo: "Mata-mata", fase: "Quartas de final", mandante: "Argentina", visitante: "Switzerland", dataHora: new Date("2026-07-11T22:00:00-03:00"), estadio: "Kansas City Stadium", cidade: "Kansas City" } ,
 ];
